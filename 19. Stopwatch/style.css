@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#00DBDE,#FC00FF);
+}
+.main {
+  width: 300px;
+  height: auto;
+}
+h1 {
+  text-align: center;
+  padding: 10px 0px;
+}
+.timer {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.button-section {
+  text-align: center;
+  padding: 10px 0px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+}
+.start {
+  background-color: greenyellow;
+}
+.stop {
+  background-color: red;
+}
+.reset {
+  background-color: blue;
+}

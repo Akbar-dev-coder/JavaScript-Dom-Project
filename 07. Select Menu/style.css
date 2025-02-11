@@ -1,0 +1,69 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#52ACFF,#FFE32C);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector {
+  width: 350px;
+}
+
+.selectField {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.selectField img {
+  width: 20px;
+  margin-left: 20px;
+  transition: transform 0.5s;
+}
+
+#list {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  list-style: none;
+  margin-top: 15px;
+  padding: 10px 0px;
+}
+
+.options {
+  width: 100%;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.options img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.options:hover {
+  background-color: grey;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

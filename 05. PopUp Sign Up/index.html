@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Popup Sign Up button </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="content-container">
+        <h1> Welcome to the JavaSript World </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi dignissimos, velit qui recusandae cum
+          architecto voluptates ex suscipit commodi quam laboriosam saepe quibusdam esse beatae hic autem officiis deleniti.
+        </p>
+        <button class="btn" id="signup">Sign Up</button>
+      </div>
+    </header>
+    <section id="modals">
+      <div class="modal">
+        <button class="close-btn" id="close">x</button>
+        <div class="modal-container">
+          <h3> Sign Up </h3>
+          <form action="">
+            <div class="section">
+              <label for="name">Name</label><br />
+              <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="section">
+              <label for="email">Email</label><br />
+              <input type="email" placeholder="Enter Email">
+            </div>
+            <div class="section">
+              <label for="pwd">Password</label><br />
+              <input type="password" placeholder="Enter password">
+            </div>
+            <div class="section">
+              <label for="cnf"> Confirm Password </label> <br />
+              <input type="password" placeholder="Confirm password">
+            </div>
+            <button id="submit" type="submit"> submit </button>
+          </form>
+          </div>
+        </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

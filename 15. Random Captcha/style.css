@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 400px;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+h3 {
+  text-align: center;
+  padding: 20px 0px;
+}
+.captcha-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.captcha-code {
+  width: 75%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+.reload {
+  width: 20%;
+  background-color: white;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section {
+  background-color: white;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input-text {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0px 5px;
+}
+button {
+  background-color: aqua;
+  outline: none;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+#text {
+  display: none;
+  padding: 10px 0px;
+  text-align: center;
+  color: red;
+}

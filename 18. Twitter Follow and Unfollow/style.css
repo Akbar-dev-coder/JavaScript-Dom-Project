@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-bg: white;
+  --light-primary: rgb(247, 249, 250);
+  --light-secondary: rgb(240, 242, 243);
+  --light-divider: rgb(235, 237, 238);
+
+  --dark-bg: black;
+  --dark-primary: #15181c;
+  --dark-secondary: #2f3336;
+  --dark-divider: #2f3336;
+
+  --highlight-color: #e0245e;
+}
+
+.light-theme {
+  --background-color: var(--light-bg);
+  --primary-bg: var(--light-primary);
+  --secondary-bg: var(--light-secondary);
+  --divider: var(--light-divider);
+}
+
+.dark-theme {
+  --background-color: var(--dark-bg);
+  --primary-bg: var(--dark-primary);
+  --secondary-bg: var(--dark-secondary);
+  --divider: var(--dark-divider);
+  color: white !important;
+}
+
+.theme {
+  background-color: var(--primary-bg);
+  color: inherit;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+}
+
+.card {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px grey;
+  background-color: white;
+}
+
+.tittle {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 20px;
+  color: #15181c;
+}
+
+.profile {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-items: stretch;
+  justify-content: space-between;
+}
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.name {
+  color: #15181c;
+}
+.image-one {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZB1b6rfq8kiI0s_oA6AvusMSGQUsMaI4WQ&s);
+}
+.image-two {
+  background-image: url(https://images.javatpoint.com/biography/images/salman-khan1.jpg);
+}
+.image-three {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqX7txk3yXiCsIhhJ6GAIytJ9NH8Sc5uB0w&s);
+}
+.image-four {
+  background-image: url(https://cdn.britannica.com/25/162425-050-B767198B/Aamir-Khan.jpg);
+}
+.profile:hover,
+.show-more:hover {
+  background-color: var(--secondary-bg);
+}
+.profile-info {
+    padding: 0 10px;
+    flex-grow: 1;
+}
+.username {
+  color: #525556;
+}
+.btn {
+    background-color: inherit;
+    border: 1px solid var(--highlight-color);
+    border-radius: 16px;
+    color: var(--highlight-color);
+    padding: 6px 16px;
+    outline: none;
+    font-weight: 900;
+}
+.show-more {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  display: block;
+  padding: 15px 20px 20px 20px;
+  text-decoration: none;
+  color: var(--highlight-color);
+}
+.show-more:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.followed {
+  background-color: var(--highlight-color);
+  color: white;
+}

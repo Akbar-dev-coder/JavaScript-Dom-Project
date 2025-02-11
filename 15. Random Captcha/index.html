@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Random Captcha </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <h3> Random Captcha </h3>
+      <div class="captcha-section">
+        <div class="captcha-code" id="captcha-code"></div>
+        <div class="reload" id="reload">
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+      </div>
+      <form class="input-section">
+        <input type="text" id="input-text" placeholder="Enter a Captcha Code" required>
+        <button class="btn" id="btn">Check</button>
+      </form>
+      <div id="text"></div>
+    </section>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>

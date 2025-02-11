@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.counter-box {
+  width: 600px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.increment-btn {
+  font-size: 20px;
+  background-color: green;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+  color: white;
+}
+
+.save-btn {
+  font-size: 20px;
+  background-color: blue;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.entries {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.entries-field {
+  margin-top: 10px;
+}
