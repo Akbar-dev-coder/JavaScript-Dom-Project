@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <input type="text" id="display" readonly>
+    <div class="button-container">
+      <button onclick="currentDisplay += '7'; 
+      updateDisplay()" > 7 </button>
+      <button onclick="currentDisplay += '8'; 
+      updateDisplay()"> 8 </button>
+      <button onclick="currentDisplay += '9'; 
+      updateDisplay()"> 9 </button>
+      <button class="btn" onclick="currentDisplay += '+'; 
+      updateDisplay()"> + </button>
+      <button onclick="currentDisplay += '4'; 
+      updateDisplay()"> 4 </button>
+      <button onclick="currentDisplay += '5'; 
+      updateDisplay()"> 5 </button>
+      <button onclick="currentDisplay += '6'; 
+      updateDisplay()"> 6 </button>
+      <button class="btn" onclick="currentDisplay += '-'; 
+      updateDisplay()"> - </button>
+      <button onclick="currentDisplay += '1'; 
+      updateDisplay()"> 1 </button>
+      <button onclick="currentDisplay += '2'; 
+      updateDisplay()"> 2 </button>
+      <button onclick="currentDisplay += '3'; 
+      updateDisplay()"> 3 </button>
+      <button class="btn" onclick="currentDisplay += '*'; 
+      updateDisplay()"> * </button>
+      <button class="red" onclick="clearDisplay(); 
+      updateDisplay()"> c </button>
+      <button onclick="currentDisplay += '0'; 
+      updateDisplay()"> 0 </button>
+      <button class="btn" onclick="calculate(); 
+      updateDisplay()"> = </button>
+      <button class="btn" onclick="currentDisplay += '/'; 
+      updateDisplay()"> / </button>
+    </div>
+  </main>
+
+  <script>
+    let currentDisplay = '';
+   
+    function updateDisplay() {
+       document.querySelector("#display").value = currentDisplay;
+    }
+
+    function clearDisplay(){
+      currentDisplay = '';
+      updateDisplay();
+    }
+
+    function calculate(){
+      try {
+        currentDisplay = eval(currentDisplay);
+        updateDisplay();
+      }catch(error){
+        currentDisplay = "error";
+        updateDisplay();
+      }
+    }
+    
+  </script>
+</body>
+</html>

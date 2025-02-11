@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Bat Ball Stump</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1> Bat ball stump </h1>
+  <button onclick="Bat()"> Bat </button>
+  <button onclick="Ball()"> Ball </button>
+  <button onclick="Stump()"> Stump </button>
+
+  <script>
+    function Bat(){
+      let randomNumber = Math.random()*3;
+      let computerChoice;
+      if (randomNumber > 0 && randomNumber <=1) {
+        computerChoice = "Bat";
+      }else if(randomNumber > 1 && randomNumber <=2){
+        computerChoice = "Ball";
+      }else {
+        computerChoice = "Stump";
+      }
+
+      let resultMsg;
+      if(computerChoice === "Ball"){
+        resultMsg = "User Won";
+      }else if (computerChoice === "Bat"){
+        resultMsg = "It's a tie";
+      }else if(computerChoice === "Stump") {
+        resultMsg = "Computer Has Won";
+      }
+      alert (`You have chosen Bat.ComputerChoice is ${computerChoice} and ${resultMsg}`);
+    }
+
+    function Ball() {
+        let randomNumber = Math.random() * 3;
+        let computerChoice;
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "Bat";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "Ball";
+        } else {
+          computerChoice = "Stump";
+        }
+
+        let resultMsg;
+        if (computerChoice === "Ball") {
+          resultMsg = "It's a tie";
+        } else if (computerChoice === "Bat") {
+          resultMsg = "Comnputer Has Won";
+        } else if (computerChoice === "Stump") {
+          resultMsg = "User Won";
+        }
+        alert(`You have chosen Ball. ComputerChoice is ${computerChoice} and ${resultMsg}`);
+      }
+
+      function Stump() {
+          let randomNumber = Math.random() * 3;
+          let computerChoice;
+          if (randomNumber > 0 && randomNumber <= 1) {
+            computerChoice = "Bat";
+          } else if (randomNumber > 1 && randomNumber <= 2) {
+            computerChoice = "Ball";
+          } else {
+            computerChoice = "Stump";
+          }
+
+          let resultMsg;
+          if (computerChoice === "Ball") {
+            resultMsg = "Comnputer Has Won";
+          } else if (computerChoice === "Bat") {
+            resultMsg = "User Has Won";
+          } else if (computerChoice === "Stump") {
+            resultMsg = "It's a tie ";
+          }
+          alert(`You have chosen Stump.ComputerChoice is ${computerChoice} and ${resultMsg}`);
+        }
+   
+  </script>
+</body>
+</html>
